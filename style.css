@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;1,500&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*,body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+}
+a:hover {
+    color: #fff;
+}
+
+.container-login {
+    width: 100%;
+    height: 100vh;
+    background: url(/bgLogin.jpg) no-repeat center fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    filter: contrast(1.3);
+    -webkit-filter: contrast(1.3);
+}
+.form-login {
+    width: 450px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 3px 10px #000;
+    padding: 20px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.form-login h1 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.card-input {
+    margin-top: 15px;
+}
+.input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.input>input {
+    padding: 10px;
+    margin-top: 5px;
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    outline: none;
+    border: transparent;
+    color: #fff;
+    border-bottom: 2px solid #df3636;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.input>input:focus {
+    border-bottom: 2px solid #dfdf36;
+}
+.input>input:valid {
+    border-bottom: 2px solid #007bff;
+}
+.input>label {
+    font-size: 16px;
+    color: #fff;
+}
+
+/* remember me kebawah */
+.subCard-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rememberme {
+    padding-left: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+}
+#submit {
+    margin-top: 15px;
+    width: 100%;
+    height: 50px;
+    font-size: large;
+    font-weight: 550;
+    letter-spacing: 1.5px;
+    border: none;
+    color: #fff;
+    background-color: #007fff;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+}
+#submit:hover {
+    color: #fff;
+    background-color: #00009b;
+    cursor: pointer;
+}
+#submit:active {
+    background-color: #007fff;
+}
+.sign-up {
+    margin-top: 25px;
+    text-align: center;
+    color: white;
+    text-shadow: 0 1px 2px #00b0f0;
+}
+@media screen and (max-width: 480px) {
+    .form-login {
+        font-size: small;
+    }
+    .form-login h1 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .subCard-input {
+        font-size: small;
+        display: block;
+    }
+    .subCard-input a {
+        padding-left: 29px;
+    }
+    #submit {
+        font-size: medium;
+        letter-spacing: normal;
+        height: 40px;
+    }
+}
