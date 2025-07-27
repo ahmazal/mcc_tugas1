@@ -42,7 +42,7 @@ header h1 {
     width: 100%;
     margin-top: 40px;
     display: flex;
-    background: url(/bgLogin.jpg) no-repeat center fixed;
+    background: url('https://raw.githubusercontent.com/ahmazal/mcc_tugas1/main/bgLogin.jpg') no-repeat center fixed;
     box-shadow: 5px 0 4px #007fff, -5px 0 5px #000;
     justify-content: center;
     align-items: center;
