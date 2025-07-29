@@ -1,0 +1,112 @@
+/* form login */
+.container-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input {
+    display: flex;
+    flex-direction: column;
+}
+.subCard-input {
+    display: flex;
+    justify-content: space-between;
+}
+.rememberme {
+    display: flex;
+}
+
+@media screen and (max-width: 480px) {
+  .form-login {
+      font-size: small;
+  }
+  .form-login h1 {
+      font-size: 20px;
+      font-weight: 600;
+  }
+  .subCard-input {
+      font-size: small;
+      display: block;
+  }
+  .subCard-input a {
+      padding-left: 29px;
+  }
+  #submit {
+      font-size: medium;
+      letter-spacing: normal;
+      height: 40px;
+  }
+}
+
+/* biodata page */
+.container-konten {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.konten-img {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.img-caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.data-person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container-sosmed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sosmed-icon {
+    display: flex;
+    justify-content: center;
+} 
+
+@media screen and (max-width: 425px) {
+  .konten-img {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .konten-img .image {
+      width: 90px;
+      margin: auto;
+  }
+  .img-caption p {
+      font-size: 12px;
+  }
+  .img-caption .h1-name {
+      display: inline-block;
+  }
+  th,td {
+      font-size: 14px;
+  }
+  aside p {
+      font-size: small;
+  }
+}

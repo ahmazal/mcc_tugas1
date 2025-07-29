@@ -8,8 +8,8 @@
 }
 .container {
     width: 100%;
-    display: relative;
-    background: linear-gradient(70deg, black, #007fff, black,black);
+    position: relative;
+    background: linear-gradient(70deg, #dcdcdc, #007fff, #114794,#dcdcdc);
 }
 header {
     width: 100%;
@@ -24,16 +24,11 @@ header {
 header h1 {
     color: #fff;
     font-weight: 600;
-    text-shadow: 0 1px 2px #179d25;
+    text-shadow: 0 0 8px #ffffff;
 }
 .container-konten {
-    height: 400px;
     width: 100%;
     padding: 24px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     gap: 32px;
 }
 /* hero section */
@@ -41,12 +36,8 @@ header h1 {
     padding: 24px;
     width: 100%;
     margin-top: 40px;
-    display: flex;
     background: url('https://raw.githubusercontent.com/ahmazal/mcc_tugas1/main/bgLogin.jpg') no-repeat center fixed;
     box-shadow: 5px 0 4px #007fff, -5px 0 5px #000;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     gap: 26px;
     overflow: hidden;
     border-radius: 100px;
@@ -58,34 +49,29 @@ header h1 {
 .konten-img {
     color: #fff;
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
     gap: 26px;
 }
 .konten-img .image {
     width: 180px;
-    margin-left: auto;
-    box-shadow: -2px 4px #00009b;
+    margin: auto;
+    box-shadow: 0 5px rgb(0, 0, 61);
     border-radius: 100px;
     -webkit-border-radius: 100px;
     -moz-border-radius: 100px;
     -ms-border-radius: 100px;
     -o-border-radius: 100px;
-    transition: all 300ms ease-in-out;
-    -webkit-transition: all 300ms ease-in-out;
-    -moz-transition: all 300ms ease-in-out;
-    -ms-transition: all 300ms ease-in-out;
-    -o-transition: all 300ms ease-in-out;
+    transition: all 200ms ease-in;
+    -webkit-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    -ms-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
 }
 .konten-img .image:hover {
     box-shadow: none;
-    translate: -2px 4px;
+    translate: 0 5px;
 }
 .img-caption {
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     gap: 10px;
     text-align: left;
 }
@@ -96,16 +82,13 @@ header h1 {
 }
 .konten-img .h1-name {
     font-size: 40px;
-    color: #09022d;
+    color: #e8e8ff;
     text-shadow: 0 1px #007fff;
 }
 aside {
     margin-inline: auto;
     width: 500px;
     height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     overflow: hidden;
 }
 aside p {
@@ -116,16 +99,11 @@ aside p {
 /* data person */
 .container-data {
     width: 100%;
-    
 }
 .data-person {
     width: 100%;
     height: max-content;
     padding: 16px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     background-color: rgba(255, 255, 255, 0.1);
     gap: 10px;
 }
@@ -135,6 +113,7 @@ aside p {
     font-size: 32px;
 }
 .container-table {
+    box-shadow: 0 0 15px #000;
     table-layout: fixed;
     width: 70%;
     border-collapse: collapse;
@@ -150,7 +129,7 @@ aside p {
     color: #fff;
 }
 .tbody {
-    background-color: #00009b;
+    background-color: #00299b;
     color: #fff;
     transition: 100ms ease-in-out;
     -webkit-transition: 100ms ease-in-out;
@@ -173,26 +152,16 @@ th,td {
     width: 100%;
     height: 30vh;
     padding: 16px;
-    background-color: #000125;
     color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
     gap: 10px;
     font-size: 18px;
 }
 /* icon sosmed */
 .container-sosmed {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     gap: 10px;
 }
 .sosmed-icon {
-    display: flex;
-    justify-content: center;
     gap: 20px;
     list-style: none;
 } 
@@ -216,8 +185,8 @@ th,td {
         -ms-border-radius: 15px;
         -o-border-radius: 15px;
 }
-    .konten-img img {
-        width: 100px;
+    .konten-img .image {
+        width: 90px;
     }
     .img-caption {
         font-size: small;
@@ -241,30 +210,5 @@ th,td {
     }
     .data-person h1 {
         font-size: 24px;
-    }
-}
-
-@media screen and (max-width: 425px) {
-    .konten-img {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .konten-img .image {
-        width: 90px;
-        /* height: 100px; */
-        margin: auto;
-    }
-    .img-caption p {
-        font-size: 12px;
-    }
-    .img-caption .h1-name {
-        display: inline-block;
-    }
-    th,td {
-        font-size: 14px;
-    }
-    aside p {
-        font-size: small;
     }
 }
